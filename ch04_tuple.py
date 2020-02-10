@@ -1,0 +1,10 @@
+T = (1, 2, 3, 4, 'aa')
+
+print('dir(T) =', dir(T))
+print('T =', T)
+print('len(T) =', len(T))
+print('T[0] =', T[0])
+print('T + (21, 22) =', T + (21, 22))
+print('T.index(4) =', T.index(4))
+print('T.count(4) =', T.count(4))
+print('T.index(aa) =', T.index('aa'))

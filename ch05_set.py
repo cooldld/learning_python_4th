@@ -1,0 +1,11 @@
+x = set('abcde')
+y = set('bdxyz')
+
+print('dir(x) =', dir(x))
+print('x =', x)
+print('y =', y)
+print('e in x =', 'e' in x)
+print('x - y =', x - y)
+print('x | y =', x | y)
+print('x & y =', x & y)
+print('x ^ y =', x ^ y)
