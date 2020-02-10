@@ -71,3 +71,14 @@ print('L3 =', L3)
 
 L3 = list(map(ord, 'spam'))
 print('L3 =', L3)
+
+L1 = ['abc', 'ABC', 'aBe']
+print('L1 =', L1)
+L1.sort()
+print('L1.sort() =', L1)
+L1 = ['abc', 'ABC', 'aBe']
+L1.sort(key = str.lower)
+print('L1.sort(key = str.lower) =', L1)
+L1 = ['abc', 'ABC', 'aBe']
+L1.sort(key = str.lower, reverse = True)
+print('L1.sort(key = str.lower, reverse = True) =', L1)
