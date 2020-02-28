@@ -1,0 +1,7 @@
+print('try and 1 / 0')
+try:
+    1 / 0
+except Exception as x:
+    print('except Exception, type(x) =%s, x = %s, x.args = %s' % (type(x), x, x.args))
+    print("raise TypeError('hello') from x")
+    raise TypeError('hello') from x
