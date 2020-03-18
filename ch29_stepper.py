@@ -1,6 +1,7 @@
 print('class stepper, use __getitem__() to iterate')
 class stepper:
     def __getitem__(self, i):
+        print('stepper.__getitem__, i =', i)
         return self.data[i]
 
 print()

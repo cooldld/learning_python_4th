@@ -3,11 +3,12 @@ def gensquares(N):
     for i in range(N):
         yield i ** 2
 
+print()
 print('for i in gensquares(5)')
 for i in gensquares(5):
     print(i)
-print('')
 
+print()
 #gensquares返回一个生成器对象generator object
 x = gensquares(5)
 print('x = gensquares(5), x =', x)
@@ -24,9 +25,9 @@ print('next(x) =', next(x))
 or
 print('x.__next__() =', x.__next__())
 ''')
-print('')
 
-#how to use send()
+print('*' * 30)
+print('how to use send with yield')
 print('def gen()')
 def gen():
     for i in range(10):

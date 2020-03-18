@@ -25,7 +25,7 @@ print('class Indexer, use __getitem__() and __setitem__() to slice')
 class Indexer:
     data = [5, 6, 7, 8, 9]
     def __getitem__(self, index):
-        print('getitem:', index)
+        print('Indexer.__getitem__, index =', index)
         return self.data[index]
     def __setitem__(self, index, value):
         self.data[index] = value

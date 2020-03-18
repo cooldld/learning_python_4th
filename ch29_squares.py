@@ -4,8 +4,10 @@ class Squares:
         self.value = start - 1
         self.stop = stop
     def __iter__(self):
+        print('Squares.__iter__, self =', self)
         return self
     def __next__(self):
+        print('Squares.__next__, self =', self)
         if self.value == self.stop:
             raise StopIteration
         self.value += 1

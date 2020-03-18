@@ -31,9 +31,9 @@ Inheritor().action()
 ''')
 
 if __name__ == '__main__':
-    for cs in (Inheritor, Replacer, Extender):
-        print('\n' + cs.__name__ + '...')
-        cs().method()
+    for cls in (Inheritor, Replacer, Extender):
+        print('\n' + cls.__name__ + '...')
+        cls().method()
     print('\nProvider...')
     x = Provider()
     x.action()

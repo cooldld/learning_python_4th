@@ -3,20 +3,20 @@ class Iters:
     def __init__(self, value):
         self.data = value
     def __getitem__(self, i):
-        print('call __getitem__, i =', i)
+        print('Iters.__getitem__, i =', i)
         return self.data[i]
     def __iter__(self):
-        print('call __iter__')
+        print('Iters.__iter__')
         self.ix = 0
         return self
     def __next__(self):
-        print('call __next__')
+        print('Iters.__next__')
         if self.ix == len(self.data): raise StopIteration
         item = self.data[self.ix]
         self.ix += 1
         return item
     def __contains__(self, x):
-        print('call __contains__, x =', x)
+        print('Iters.__contains__, x =', x)
         return x in self.data
 
 print()
