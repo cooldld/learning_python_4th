@@ -32,27 +32,31 @@ def f5():
 
 print('call f5()')
 f5_ret = f5()
+print('f5_1 =', f5_ret)
 print('call f5_1()')
 L1 = f5_ret()
 print('f5_1(), L1=', L1)
 L2 = f5_ret()
 print('f5_1(), L2=', L2)
 L1[0] = 10
-print('L1[0] = 10, L1 =', L1, ', L2=', L2)
+print('L1[0] = 10, L1 =', L1, ', L2 =', L2)
 L3 = f5_ret()
 print('f5_1(), L3=', L3)
 
+print()
+print('maker是工厂函数, 也叫闭合closure函数')
 def maker(n):
     def action(x):
+        print('{0} ** {1}'.format(x, n))
         return x ** n
     return action
 
 f = maker(2)
 print('f = maker(2), f =', f)
-print('f(2) =', f(2))
-print('f(3) =', f(3))
 g = maker(3)
 print('g = maker(3), g =', g)
-print('g(2) =', g(2))
-print('g(3) =', g(3))
 
+print('f(2) =', f(2))
+print('g(2) =', g(2))
+print('f(3) =', f(3))
+print('g(3) =', g(3))

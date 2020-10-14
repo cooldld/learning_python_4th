@@ -1,18 +1,14 @@
-print('class First_class')
+exec_str = '''
 class First_class:
     def setdata(self, value):
         self.data = value
     def display(self):
         print(self.data)
 
-print('')
-print('class Second_class(First_class)')
 class Second_class(First_class):
     def display(self):
         print('Second_class, self.data =', self.data)
 
-print('')
-print('class Third_class(Second_class)')
 class Third_class(Second_class):
     def __init__(self, value):
         self.data = value
@@ -22,8 +18,10 @@ class Third_class(Second_class):
         return '[Third_class: %s]' % self.data
     def mul(self, other):
         self.data *= other
+'''
+print(exec_str)
+exec(exec_str)
 
-print('')
 print("a = Third_class('abc')")
 a = Third_class('abc')
 print('a =', a)

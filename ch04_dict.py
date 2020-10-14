@@ -1,34 +1,34 @@
 D = {'food': 'spam', 'quantity': 4, 'color': 'pink'}
 
 print('dir(D) =', dir(D))
-print('D = ', D)
-print('D[food] = ', D['food'])
+print('D =', D)
+print('D[food] =', D['food'])
 
 D['quantity'] += 1
-print('quantity +=1, D = ', D)
+print('quantity +=1, D =', D)
 
 D = {}
 D['name'] = 'Bob'
 D['job'] = 'dev'
 D['age'] = 40
-print('D = ', D)
+print('D =', D)
 
 rec = {'name': {'first': 'Bob', 'last': 'Smith'},
     'job': ['dev', 'mgr'],
     'age': 40.5}
-print('rec = ', rec)
+print('rec =', rec)
 
 D = {'b': 2, 'c': 3, 'a': 1}
-print('D = ', D)
+print('D =', D)
 keys = list(D.keys())
-print('list(D.keys()) = ', keys)
+print('list(D.keys()) =', keys)
 keys.sort()
-print('keys.sort = ', keys)
+print('keys.sort =', keys)
 for key in keys:
     print(key, '=>', D[key])
 
 D = {'b': 2, 'c': 3, 'a': 1}
-print('D = ', D)
+print('D =', D)
 for key in sorted(D):
     print(key, '=>', D[key])
 

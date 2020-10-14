@@ -1,13 +1,15 @@
-print('class first_class')
+exec_str = '''
 class first_class:
     def setdata(self, value):
         self.data = value
     def display(self):
         print(self.data)
 
-print('')
-print('x = first_class()')
 x = first_class()
+'''
+
+print(exec_str)
+exec(exec_str)
 
 print('''
 error!!!

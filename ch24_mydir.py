@@ -2,8 +2,8 @@
 ch24_mydir.py: a module that lists the namespaces of other modules
 '''
 
-seplen = 60
 sepchr = '-'
+seplen = 60
 
 def listing(module, verbose = True):
     print('listing all names of module', module.__name__)

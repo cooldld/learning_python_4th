@@ -1,9 +1,9 @@
-print('def gensquares(N)')
+print('def gensquares(N): for i in range(N): yield i ** 2')
 def gensquares(N):
     for i in range(N):
         yield i ** 2
 
-print()
+print('gensquares =', gensquares)
 print('for i in gensquares(5)')
 for i in gensquares(5):
     print(i)

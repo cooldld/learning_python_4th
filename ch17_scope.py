@@ -25,7 +25,7 @@ def func():
 print('call func')
 func()
 
-x, y, z = 0, 12, 15
+x, y, z = 0, 1, 1
 def all_global():
     global x
     x = y + z
