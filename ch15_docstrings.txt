@@ -1,0 +1,5 @@
+16
+square.__doc__ = 
+    function documentation
+    can we have your liver then?
+    
