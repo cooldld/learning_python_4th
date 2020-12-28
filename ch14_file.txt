@@ -1,0 +1,56 @@
+demo1:
+for line in open('ch07_echo.py')
+IMPORT SYS
+
+PRINT('SYS.ARGV =', SYS.ARGV)
+PRINT('SYS.ARGV[1:] =', SYS.ARGV[1:])
+
+demo2:
+for line in open('ch07_echo.py').readlines()
+IMPORT SYS
+
+PRINT('SYS.ARGV =', SYS.ARGV)
+PRINT('SYS.ARGV[1:] =', SYS.ARGV[1:])
+
+demo3:
+while and line = f.readline()
+IMPORT SYS
+
+PRINT('SYS.ARGV =', SYS.ARGV)
+PRINT('SYS.ARGV[1:] =', SYS.ARGV[1:])
+
+demo4:
+call f.__next__()
+f.__next__() = import sys
+f.__next__() = 
+f.__next__() = print('sys.argv =', sys.argv)
+f.__next__() = print('sys.argv[1:] =', sys.argv[1:])
+
+demo5:
+call next(f)
+next(f) = import sys
+next(f) = 
+next(f) = print('sys.argv =', sys.argv)
+next(f) = print('sys.argv[1:] =', sys.argv[1:])
+
+demo6:
+call iter(f) and next(i)
+next(i) = import sys
+next(i) = 
+next(i) = print('sys.argv =', sys.argv)
+next(i) = print('sys.argv[1:] =', sys.argv[1:])
+
+demo7:
+call iter(f) and i.__next__()
+i.__next__() = import sys
+i.__next__() = 
+i.__next__() = print('sys.argv =', sys.argv)
+i.__next__() = print('sys.argv[1:] =', sys.argv[1:])
+
+demo8:
+try and except StopIteration
+line = import sys
+line = 
+line = print('sys.argv =', sys.argv)
+line = print('sys.argv[1:] =', sys.argv[1:])
+catch StopIteration
