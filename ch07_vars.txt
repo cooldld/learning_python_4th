@@ -1,0 +1,2 @@
+vars() = {'__file__': 'ch07_vars.py', '__name__': '__main__', '__builtins__': <module 'builtins' (built-in)>, '__loader__': <_frozen_importlib.SourceFileLoader object at 0xb70094ec>, '__doc__': None, 'age': 40, 'food': 'spam', '__cached__': None, '__package__': None}
+40, spam

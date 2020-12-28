@@ -1,0 +1,4 @@
+spam, ham and eggs
+spam, ham and eggs
+spam, ham and eggs
+'My {1[spam]} runs {0.platform}'.format(sys, {'spam': 'laptop'}) = My laptop runs linux

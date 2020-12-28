@@ -1,0 +1,2 @@
+sys.argv = ['ch07_echo.py', 'aa', 'bb', 'cc', 'dd']
+sys.argv[1:] = ['aa', 'bb', 'cc', 'dd']

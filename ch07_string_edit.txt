@@ -1,0 +1,31 @@
+s = spammy
+s[:3] + 'xx' + s[5:] = spaxxy
+s.replace('mm', 'xx') = spaxxy
+s = aa$bb$cc$dd
+s.replace('$', 'SPAM') = aaSPAMbbSPAMccSPAMdd
+s = xxxxSPAMxxxxSPAM
+s.replace('SPAM', 'EGGS') = xxxxEGGSxxxxEGGS
+s.replace('SPAM', 'EGGS', 1) = xxxxEGGSxxxxSPAM
+s[:where] + 'EGGS' + s[(where+4):] = xxxxEGGSxxxxSPAM
+s = spammy
+list(s) = ['s', 'p', 'a', 'm', 'm', 'y']
+l[3] = l[4] = x, list = ['s', 'p', 'a', 'x', 'x', 'y']
+''.join(l) = spaxxy
+', '.join(l) = s, p, a, x, x, y
+s = aaa bbb ccc
+s.split() = ['aaa', 'bbb', 'ccc']
+s = aaa,bbb,ccc
+s.split(',') = ['aaa', 'bbb', 'ccc']
+s = aaaSPAMbbbSPAMccc
+s.split('SPAM') = ['aaa', 'bbb', 'ccc']
+s = The knights who say Ni!
+
+s.rstrip() = The knights who say Ni!
+s.upper() = THE KNIGHTS WHO SAY NI!
+
+s.isalpha() = False
+s.endswith('Ni!
+') = True
+s.startswith('The') = True
+s.find('Ni') = 20
+'Ni' in s = True

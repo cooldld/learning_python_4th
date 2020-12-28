@@ -1,0 +1,7 @@
+s = a
+chr(ord(s) + 1) = b
+chr(ord(s) + 1) = c
+chr(ord(s) + 1) = d
+chr(ord(s) + 1) = e
+chr(ord(s) + 1) = f
+chr(ord(s) + 1) = g
