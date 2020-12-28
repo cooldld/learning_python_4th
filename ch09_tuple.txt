@@ -1,0 +1,36 @@
+dir(tuple) = ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+T = ()
+T = (0,)
+T = (0), type(T) = <class 'int'>
+T = (0, 1)
+T = (0, 'Ni', 1.2, 3)
+T = (0, 'Ni', 1.2, 3)
+T = ('abc', ('def', 'ghi'))
+T = ('s', 'p', 'a', 'm')
+T[0] = s
+T[-1] = m
+len(T) = 4
+T1 = (0, 'Ni', 1.2, 3)
+T + T1 = ('s', 'p', 'a', 'm', 0, 'Ni', 1.2, 3)
+T * 3 = ('s', 'p', 'a', 'm', 's', 'p', 'a', 'm', 's', 'p', 'a', 'm')
+for x in T: print(x)
+s
+p
+a
+m
+'spam' in T = False
+'p' in T = True
+T.index('p') = 1
+T.index('a') = 2
+T.count('p') = 1
+T.count('a') = 1
+list(T) = ['s', 'p', 'a', 'm']
+tuple(list(T)) = ('s', 'p', 'a', 'm')
+sorted(T) = ['a', 'm', 'p', 's']
+for x in T: print(x)
+s
+p
+a
+m
+T = (1, [2, 3], 4)
+T[1][0] = 'spam' --> T = (1, ['spam', 3], 4)

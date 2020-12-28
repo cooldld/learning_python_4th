@@ -1,0 +1,4 @@
+struct_file = ch09_struct.data
+struct.pack, data = b'\x00\x00\x00\x07spam\x00\x08'
+file read, data = b'\x00\x00\x00\x07spam\x00\x08'
+struct.unpack, values = (7, b'spam', 8)

@@ -3,14 +3,18 @@ s = 'spam'
 d = {'a': 1, 'b': 2}
 l = [1, 2, 3]
 
-f = open('ch09_data.txt', 'w')
+file_name = 'ch09_file.data'
+
+print('file_name =', file_name)
+
+f = open(file_name, 'w')
 f.write(s + '\n')
 f.write('%s,%s,%s\n' % (x, y, z))
 f.write(str(l) +  '\n')
 f.write(str(d) + '\n')
 f.close()
 
-f = open('ch09_data.txt')
+f = open(file_name)
 line = f.readline()
 print('readline =', line.rstrip())
 

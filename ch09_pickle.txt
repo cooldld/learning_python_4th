@@ -1,0 +1,15 @@
+D = {'b': 2, 'a': 1}
+L = [1, 2, 3, 4]
+pickle_file = ch09_pickle.data
+pickle.dump(D, F)
+pickle.dump(D, F)
+pickle.dump(L, F)
+pickle.dump(L, F)
+pickle.load(F) = {'b': 2, 'a': 1}
+pickle.load(F) = {'b': 2, 'a': 1}
+pickle.load(F) = [1, 2, 3, 4]
+pickle.load(F) = [1, 2, 3, 4]
+Traceback (most recent call last):
+  File "ch09_pickle.py", line 33, in <module>
+    E = pickle.load(F)
+EOFError

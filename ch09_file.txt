@@ -1,0 +1,8 @@
+file_name = ch09_file.data
+readline = spam
+parts = ['43', '44', '45']
+numbers = [43, 44, 45]
+line = [1, 2, 3]
+eval(line) = [1, 2, 3]
+line = {'a': 1, 'b': 2}
+eval(line) = {'a': 1, 'b': 2}
