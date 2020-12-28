@@ -1,0 +1,22 @@
+list(range(5)) = [0, 1, 2, 3, 4]
+list(range(2, 5)) = [2, 3, 4]
+list(range(0, 10, 2)) = [0, 2, 4, 6, 8]
+list(range(-5, 5)) = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4]
+list(range(5, -5, -1)) = [5, 4, 3, 2, 1, 0, -1, -2, -3, -4]
+for i in range(3)
+i = 0
+i = 1
+i = 2
+for i in 'spam'
+i = s
+i = p
+i = a
+i = m
+s = abcdefghijk
+for i in s[::2]: print('i =', i)
+i = a
+i = c
+i = e
+i = g
+i = i
+i = k

@@ -1,0 +1,9 @@
+L1 = [1, 2, 3, 4]
+L2 = ['a', 'b', 'c', 'd']
+zip(L1, L2) = <zip object at 0xb70243ec>
+list(zip(L1, L2)) = [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd')]
+for (x, y) in zip(L1, L2)
+x = 1, y= a
+x = 2, y= b
+x = 3, y= c
+x = 4, y= d

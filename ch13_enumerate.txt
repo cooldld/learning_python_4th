@@ -1,0 +1,18 @@
+s = spam
+enumerate(s) = <enumerate object at 0xb70a125c>
+for (offset, item) in enumerate(s)
+offset = 0, item = s
+offset = 1, item = p
+offset = 2, item = a
+offset = 3, item = m
+L = ['a', 'b', 'c', 'd']
+enumerate(L) = <enumerate object at 0xb70630cc>
+next(E) = (0, 'a')
+next(E) = (1, 'b')
+next(E) = (2, 'c')
+next(E) = (3, 'd')
+for (offset, item) in enumerate(L)
+offset = 0, item = a
+offset = 1, item = b
+offset = 2, item = c
+offset = 3, item = d
