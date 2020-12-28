@@ -1,0 +1,4 @@
+s1 = SPAM
+s2 = SCAM
+intersect(s1, s2) = ['S', 'A', 'M']
+intersect([1, 2, 3], (1, 4)) = [1]
