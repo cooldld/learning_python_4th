@@ -5,8 +5,10 @@ sys.stdout.write('hello world\n')
 
 stdout_default = sys.stdout
 
-print('sys.stdout = open ch11_stdout.txt')
-sys.stdout = open('ch11_stdout.txt', 'a')
+file_name = 'ch11_stdout.data'
+
+print('sys.stdout = open', file_name)
+sys.stdout = open(file_name, 'a')
 print('hello world')
 print(1, 2, 3)
 print('sys.stdout.close')
@@ -20,6 +22,6 @@ print('sys.stdout is default')
 print(1, 2, 3)
 
 print('print(file=log)')
-log = open('ch11_stdout.txt', 'a')
+log = open(file_name, 'a')
 print('sys.stdout is default', file=log)
 print(1, 2, 3, file=log)

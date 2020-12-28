@@ -1,0 +1,14 @@
+
+spam 99 ['eggs']
+spam99['eggs']
+spam, 99, ['eggs']
+spam 99 ['eggs']spam 99 ['eggs']spam 99 ['eggs']
+spam 99 ['eggs']...
+spam...99...['eggs']!
+spam...99...['eggs']!
+file_name = ch11_print.data
+spam 99 ['eggs']
+spam...99...['eggs']
+
+Result: 3.1416, 00042
+Result: 3.1416, 00042

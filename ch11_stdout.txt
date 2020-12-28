@@ -1,16 +1,6 @@
+use sys.stdout.write
 hello world
-hello world
-hello world
-1 2 3
-sys.stdout.close
-hello world
-1 2 3
-sys.stdout.close
-hello world
-1 2 3
-sys.stdout.close
-hello world
-1 2 3
-sys.stdout.close
+sys.stdout = open ch11_stdout.data
 sys.stdout is default
 1 2 3
+print(file=log)

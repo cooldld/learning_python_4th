@@ -20,11 +20,13 @@ print(x, y, z, sep='...', end='!\n')
 
 print(x, y, z, end='!\n', sep='...')
 
-print(x, y, z, sep='...', file=open('ch11_data.txt', 'w'))
+file_name = 'ch11_print.data'
+print('file_name =', file_name)
+print(x, y, z, sep='...', file=open(file_name, 'w'))
 
 print(x, y, z)
 
-print(open('ch11_data.txt', 'r').read())
+print(open(file_name, 'r').read())
 
 text = '%s: %-.4f, %05d' % ('Result', 3.14159, 42)
 print(text)

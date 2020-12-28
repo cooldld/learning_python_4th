@@ -1,0 +1,8 @@
+spam = 'Hello' --> spam = Hello
+spam, ham = 'Hello', 'World' --> spam, ham = Hello World
+[spam, ham] = ['Hello', 'World'] --> spam, ham = Hello World
+a, b, c, d = 'spam' --> a, b, c, d = s p a m
+a, *b = 'spam' --> a = s
+a, *b = 'spam' --> b = ['p', 'a', 'm']
+spam = ham = 'lunch' --> spam, ham = lunch lunch
+spam += 2 --> spam = 2
