@@ -1,0 +1,51 @@
+dir(D) = ['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+D = {}
+D = {'spam': 2, 'eggs': 3}
+D['eggs'] = 3
+'eggs' in D = True
+D = {'food': {'ham': 1, 'eggs': 2}}
+D['food']['eggs'] = 2
+dict.fromkeys(['a', 'b']) = {'b': None, 'a': None}
+dict.fromkeys(['a', 'b'], 0) = {'b': 0, 'a': 0}
+D.values() = dict_values([0, 0])
+dict(zip(['a', 'b'], [1, 2])) = {'b': 2, 'a': 1}
+list(zip(['a', 'b'], [1, 2])) = [('a', 1), ('b', 2)]
+dict([('a', 'b'), (1, 2)]) = {1: 2, 'a': 'b'}
+dict(name='Bob', age=42) = {'name': 'Bob', 'age': 42}
+D.keys() = dict_keys(['name', 'age'])
+list(D.keys()) = ['name', 'age']
+D.values() = dict_values(['Bob', 42])
+list(D.values()) = ['Bob', 42]
+D.items() = dict_items([('name', 'Bob'), ('age', 42)])
+list(D.items()) = [('name', 'Bob'), ('age', 42)]
+D.copy() = {'name': 'Bob', 'age': 42}
+D.get('name') = Bob
+D.get('namexx') = None
+D.get('namexx', 'nobody') = nobody
+D = {'name': 'Bob', 'age': 42}
+D1 = {'spam': 2, 'eggs': 3}
+D.update(D1) = {'spam': 2, 'name': 'Bob', 'age': 42, 'eggs': 3}
+D.pop('spam') = 2
+D = {'name': 'Bob', 'age': 42, 'eggs': 3}
+len(D) = 3
+D['spam'] = 'hello', D = {'spam': 'hello', 'name': 'Bob', 'age': 42, 'eggs': 3}
+D['eggs'] = 'world', D = {'spam': 'hello', 'name': 'Bob', 'age': 42, 'eggs': 'world'}
+del D['eggs'] = {'spam': 'hello', 'name': 'Bob', 'age': 42}
+D.keys() & D1.keys() = {'spam'}
+{x: x * 2 for x in range(10)} = {0: 0, 1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12, 7: 14, 8: 16, 9: 18}
+D[9] = 18
+0 : 0
+1 : 2
+2 : 4
+3 : 6
+4 : 8
+5 : 10
+6 : 12
+7 : 14
+8 : 16
+9 : 18
+food : spam
+D = {'spam': 2, 'hello': 'xxx', 'eggs': 3}
+eggs : 3
+hello : xxx
+spam : 2
