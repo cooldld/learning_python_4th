@@ -1,0 +1,28 @@
+module, x= 99
+call f1()
+f1, x= 88
+f2, x= 88
+call f3()
+f3, x= 88
+call f4()
+f4, x= 88
+call f5()
+f5(), L= [1, 2, 3, 4]
+f5_1 = <function f5.<locals>.f5_1 at 0xb70e6c44>
+call f5_1()
+f5_1(), L1= [1, 2, 3, 4]
+f5_1(), L2= [1, 2, 3, 4]
+L1[0] = 10, L1 = [10, 2, 3, 4] , L2 = [10, 2, 3, 4]
+f5_1(), L3= [10, 2, 3, 4]
+
+maker是工厂函数, 也叫闭合closure函数
+f = maker(2), f = <function maker.<locals>.action at 0xb70e6104>
+g = maker(3), g = <function maker.<locals>.action at 0xb70e6cd4>
+2 ** 2
+f(2) = 4
+2 ** 3
+g(2) = 8
+3 ** 2
+f(3) = 9
+3 ** 3
+g(3) = 27

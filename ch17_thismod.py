@@ -40,3 +40,5 @@ how to run
 import ch17_thismod
 ch17_thismod.test()
 '''
+if __name__ == '__main__':
+    test()

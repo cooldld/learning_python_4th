@@ -1,0 +1,22 @@
+f = func(2), f = <function func.<locals>.<lambda> at 0xb706177c>
+f(2) = 4
+f(3) = 9
+g = func(3), g = <function func.<locals>.<lambda> at 0xb7094dac>
+g(2) = 8
+g(3) = 27
+makeActions(), acts = [<function makeActions.<locals>.<lambda> at 0xb7094d64>, <function makeActions.<locals>.<lambda> at 0xb7094c8c>, <function makeActions.<locals>.<lambda> at 0xb7094cd4>, <function makeActions.<locals>.<lambda> at 0xb70940bc>, <function makeActions.<locals>.<lambda> at 0xb7094104>]
+acts[0](2) = 16
+acts[1](2) = 16
+acts[2](2) = 16
+acts[3](2) = 16
+acts[4](2) = 16
+makeActions2(), acts = [<function makeActions2.<locals>.<lambda> at 0xb7094df4>, <function makeActions2.<locals>.<lambda> at 0xb7094e84>, <function makeActions2.<locals>.<lambda> at 0xb7094ecc>, <function makeActions2.<locals>.<lambda> at 0xb7094f14>, <function makeActions2.<locals>.<lambda> at 0xb7094f5c>]
+acts[0](2) = 0
+acts[1](2) = 1
+acts[2](2) = 4
+acts[3](2) = 9
+acts[4](2) = 16
+call f1()
+call f2()
+call f3()
+f3(), x = 99

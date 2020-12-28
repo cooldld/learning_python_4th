@@ -1,0 +1,9 @@
+init, var = 99
+local, var = 0
+after local, var = 99
+glob1, global var += 1
+after glob1, var = 100
+glob2, import ch17_thismod, ch17_thismod.var += 1
+after glob2, var = 100
+glob2, import sys, sys.modules[ch17_thismod].var += 1
+after glob3, var = 100

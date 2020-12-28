@@ -1,0 +1,81 @@
+call f1()
+f1(), x = 88
+call f2()
+f2(), x = 99
+after f2(), x = 88
+---use nonlocal---
+call f1()
+f1(), x = 88
+call f2()
+nonlocal x
+f2(), x = 99
+after f2(), x = 99
+F = tester(0)
+call F('spam')
+label = spam, state = 0
+F = tester1(0)
+call F('spam')
+label = spam, state = 0
+call F('ham')
+label = ham, state = 1
+call F('eggs')
+label = eggs, state = 2
+G = tester1(0)
+call G('spam')
+label = spam, state = 0
+call G('ham')
+label = ham, state = 1
+call G('eggs')
+label = eggs, state = 2
+call F('eggs')
+label = eggs, state = 3
+F = tester2(0)
+call F('spam')
+label = spam, state = 0
+call F('ham')
+label = ham, state = 0
+call F('eggs')
+label = eggs, state = 0
+global state = 0
+F = tester3(0)
+G = tester3(10)
+call F('spam')
+label = spam, state = 10
+call G('spam')
+label = spam, state = 11
+call F('ham')
+label = ham, state = 12
+call G('ham')
+label = ham, state = 13
+call F('eggs')
+label = eggs, state = 14
+call G('eggs')
+label = eggs, state = 15
+F = tester4(0)
+G = tester4(10)
+call F('spam')
+label = spam, state = 0
+call G('spam')
+label = spam, state = 10
+call F('ham')
+label = ham, state = 1
+call G('ham')
+label = ham, state = 11
+call F('eggs')
+label = eggs, state = 2
+call G('eggs')
+label = eggs, state = 12
+F = tester5(0)
+G = tester5(10)
+call F('spam')
+label = spam, state = 0
+call G('spam')
+label = spam, state = 10
+call F('ham')
+label = ham, state = 1
+call G('ham')
+label = ham, state = 11
+call F('eggs')
+label = eggs, state = 2
+call G('eggs')
+label = eggs, state = 12
