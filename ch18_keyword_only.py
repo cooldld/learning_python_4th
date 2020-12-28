@@ -17,7 +17,7 @@ print('函数调用时，一旦出现了位置乱序的关键字参数name=value
 print('call kwonly(c = 3, a = 1)')
 kwonly(c = 3, a = 1)
 
-print('''
+'''
 error!!!
 SyntaxError: non-keyword arg after keyword arg
 kwonly(c = 3, 1)
@@ -26,7 +26,7 @@ kwonly(1, c = 3, 2, 20, 22)
 
 TypeError: kwonly() missing 1 required keyword-only argument: 'c'
 kwonly(1, 2, 3)
-''')
+'''
 
 print('*' * 30)
 print('函数定义时，单个*的参数，表示函数不接受一个变量长度的参数列表')
@@ -39,7 +39,7 @@ kwonly(1, c = 3, b = 2)
 print('call kwonly(c = 3, b = 2, a = 1)')
 kwonly(c = 3, b = 2, a = 1)
 
-print('''
+'''
 error!!!
 TypeError: kwonly() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
 kwonly(1, 2, c = 3)
@@ -47,7 +47,7 @@ kwonly(1, 2, c = 3)
 TypeError: kwonly() got an unexpected keyword argument 'd'
 kwonly(1, b = 2, c = 3, d = 10)
 kwonly(1, d = 10, b = 2, c = 3)
-''')
+'''
 
 print('*' * 30)
 print("def kwonly(a, *, b = 'spam', c = 'ham')")
@@ -68,12 +68,12 @@ print("def kwonly(a, *, b, c = 'ham')")
 def kwonly(a, *, b, c = 'ham'):
     print('a = %s, b = %s, c = %s' % (a, b, c))
 
-print('''
+'''
 error!!!
 TypeError: kwonly() missing 1 required keyword-only argument: 'b'
 kwonly(1)
 kwonly(1, c = 3)
-''')
+'''
 
 print('call kwonly(c = 3, b = 2, a = 1)')
 kwonly(c = 3, b = 2, a = 1)
@@ -88,11 +88,11 @@ def f(a, *b, c = 6, **d):
 print('call f(1, *(2, 3), **dict(x = 4, y = 5))')
 f(1, *(2, 3), **dict(x = 4, y = 5))
 
-print('''
+'''
 error!!!
 SyntaxError: invalid syntax
 f(1, *(2, 3), **dict(x = 4, y = 5), c = 7)
-''')
+'''
 
 print('call f(1, *(2, 3), c = 7, **dict(x = 4, y = 5))')
 f(1, *(2, 3), c = 7, **dict(x = 4, y = 5))

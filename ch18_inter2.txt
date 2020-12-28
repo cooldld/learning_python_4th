@@ -1,0 +1,6 @@
+s1 = SPAM, s2 = SCAM, s3 = SCBM
+intersect(s1, s2) = ['S', 'A', 'M']
+union(s1, s2) = ['S', 'P', 'A', 'M', 'C']
+intersect([1, 2, 3], (1, 4)) = [1]
+intersect(s1, s2, s3) = ['S', 'M']
+union(s1, s2, s3) = ['S', 'P', 'A', 'M', 'C', 'B']

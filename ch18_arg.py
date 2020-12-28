@@ -7,12 +7,12 @@ f(1, 2, 3)
 print('call f(c = 3, b = 2, a = 1)')
 f(c = 3, b = 2, a = 1)
 
-print('''
+'''
 error!!!
 SyntaxError: non-keyword arg after keyword arg
 f(c = 3, 1, b = 2)
 f(c = 3, b = 2, 1)
-''')
+'''
 
 print('call f(1, c = 3, b = 2)')
 f(1, c = 3, b = 2)
@@ -64,11 +64,12 @@ print('call f()')
 f()
 print('call f(c = 1, b = 2, a = 3)')
 f(c = 1, b = 2, a = 3)
-print('''
+
+'''
 error!!!
 TypeError: f() takes 0 positional arguments but 3 were given
 f(1, 2, 3)
-''')
+'''
 
 print('*' * 30)
 print('def f(a, *pargs, **kargs)')
@@ -91,12 +92,12 @@ print('args =', args)
 print('call f(**args)')
 f(**args)
 
-print('''
+'''
 error!!!
 TypeError: f() got an unexpected keyword argument 'cc'
 args = {'aa': 1, 'bb': 2, 'cc': 3, 'dd': 4}
 f(**args)
-''')
+'''
 
 print("call f(*(1, 2), **{'d': 4, 'c': 3})")
 f(*(1, 2), **{'d': 4, 'c': 3})
@@ -120,8 +121,8 @@ def tracer(func, *pargs, **kargs):
 print('call tracer(f, 1, 2, c = 3, d = 4)')
 tracer(f, 1, 2, c = 3, d = 4)
 
-print('''
+'''
 error!!!
 TypeError: f() got multiple values for argument 'c'
 tracer(f, 1, 2, 5, c = 3, d = 4)
-''')
+'''

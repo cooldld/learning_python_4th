@@ -1,0 +1,50 @@
+函数定义时，*args表示将参数收集到一个元组中，*args后面的参数都是keyword-only参数
+def kwonly(a, *b, c)
+call kwonly(1, 2, c = 3)
+a = 1, b = (2,), c = 3
+call kwonly(1, 2, 20, 22, c = 3)
+a = 1, b = (2, 20, 22), c = 3
+call kwonly(a = 1, c = 3)
+a = 1, b = (), c = 3
+call kwonly(1, c = 3)
+a = 1, b = (), c = 3
+函数调用时，一旦出现了位置乱序的关键字参数name=value，那么后面的入参也必须是关键字参数形式
+call kwonly(c = 3, a = 1)
+a = 1, b = (), c = 3
+******************************
+函数定义时，单个*的参数，表示函数不接受一个变量长度的参数列表
+def kwonly(a, *, b, c)
+call kwonly(1, c = 3, b = 2)
+a = 1, b = 2, c = 3
+call kwonly(c = 3, b = 2, a = 1)
+a = 1, b = 2, c = 3
+******************************
+def kwonly(a, *, b = 'spam', c = 'ham')
+call kwonly(1)
+a = 1, b = spam, c = ham
+call kwonly(1, c = 3)
+a = 1, b = spam, c = 3
+call kwonly(a = 1)
+a = 1, b = spam, c = ham
+call kwonly(c = 3, b = 2, a = 1)
+a = 1, b = 2, c = 3
+******************************
+def kwonly(a, *, b, c = 'ham')
+call kwonly(c = 3, b = 2, a = 1)
+a = 1, b = 2, c = 3
+******************************
+函数定义时，keyword-only参数，必须在*args之后，在**args之前
+函数定义时，**args表示将关键字参数收集到一个字典中
+def f(a, *b, c = 6, **d)
+call f(1, *(2, 3), **dict(x = 4, y = 5))
+a = 1, b = (2, 3), c = 6, d = {'y': 5, 'x': 4}
+call f(1, *(2, 3), c = 7, **dict(x = 4, y = 5))
+a = 1, b = (2, 3), c = 7, d = {'y': 5, 'x': 4}
+函数调用时，keyword-only参数，可以在*args之前或之后
+函数调用时，keyword-only参数，一定要在**args之前或包含在**args中
+函数调用时，*args表示将元组入参解包后再传递给函数
+函数调用时，**args表示将字典入参解包后再传递给函数
+call f(1, c = 7, *(2, 3), **dict(x = 4, y = 5))
+a = 1, b = (2, 3), c = 7, d = {'y': 5, 'x': 4}
+call f(1, *(2, 3), **dict(x = 4, y = 5, c = 7))
+a = 1, b = (2, 3), c = 7, d = {'y': 5, 'x': 4}

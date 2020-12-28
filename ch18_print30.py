@@ -40,10 +40,10 @@ def print30(*args, sep = ' ', end = '\n', file = sys.stdout):
         first = False
     file.write(output + end)
 
-print('''
+'''
 error!!!
 print30(99, name='bob')
-''')
+'''
 
 print('\ndef print30(*args, **kargs)')
 def print30(*args, **kargs):
@@ -58,5 +58,10 @@ def print30(*args, **kargs):
         first = False
     file.write(output + end)
 
+'''
+error!!!
+TypeError: extra keywords: {'name': 'bob'}
+
 print("call print30(99, name='bob')")
 print30(99, name='bob')
+'''

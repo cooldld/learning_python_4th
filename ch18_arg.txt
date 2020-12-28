@@ -1,0 +1,72 @@
+def f(a, b, c)
+call f(1, 2, 3)
+a = 1, b = 2, c = 3
+call f(c = 3, b = 2, a = 1)
+a = 1, b = 2, c = 3
+call f(1, c = 3, b = 2)
+a = 1, b = 2, c = 3
+******************************
+def f(a, b = 2, c = 3)
+call f(1)
+a = 1, b = 2, c = 3
+call f(1, 20)
+a = 1, b = 20, c = 3
+call f(1, 20, 30)
+a = 1, b = 20, c = 30
+call f(1, c=33)
+a = 1, b = 2, c = 33
+******************************
+def f(a, b, c = 0, d = 0)
+call f(1, 2)
+a = 1, b = 2, c = 0, d = 0
+call f(1, d = 1, b = 0)
+a = 1, b = 0, c = 0, d = 1
+call f(a = 1, b = 0)
+a = 1, b = 0, c = 0, d = 0
+call f(c = 1, b = 2, a = 3)
+a = 3, b = 2, c = 1, d = 0
+call f(1, 2, 3, 4)
+a = 1, b = 2, c = 3, d = 4
+******************************
+def f(*args)
+call f()
+*args = ()
+call f(1)
+*args = (1,)
+call f(1, 2, 3, 4)
+*args = (1, 2, 3, 4)
+******************************
+def f(**args)
+call f()
+**args = {}
+call f(c = 1, b = 2, a = 3)
+**args = {'c': 1, 'b': 2, 'a': 3}
+******************************
+def f(a, *pargs, **kargs)
+call f(1, 2, 3, x=1, y=2)
+a = 1, *pargs = (2, 3), **kargs = {'y': 2, 'x': 1}
+******************************
+def f(a, b, c, d)
+args = (1, 2, 3, 4)
+call f(*args)
+a = 1, b = 2, c = 3, d = 4
+args = {'c': 3, 'b': 2, 'a': 1, 'd': 4}
+call f(**args)
+a = 1, b = 2, c = 3, d = 4
+call f(*(1, 2), **{'d': 4, 'c': 3})
+a = 1, b = 2, c = 3, d = 4
+call f(1, *(2, 3), **{'d': 4})
+a = 1, b = 2, c = 3, d = 4
+call f(1, c = 3, *(2,), **{'d': 4})
+a = 1, b = 2, c = 3, d = 4
+call f(1, *(2, 3), d = 4)
+a = 1, b = 2, c = 3, d = 4
+call f(1, *(2,), c = 3, **{'d': 4})
+a = 1, b = 2, c = 3, d = 4
+******************************
+def tracer(func, *pargs, **kargs)
+call tracer(f, 1, 2, c = 3, d = 4)
+tracer, func.__name__ = f
+tracer, pargs = (1, 2), kargs = {'c': 3, 'd': 4}
+tracer, call func(*pargs, **kargs)
+a = 1, b = 2, c = 3, d = 4
