@@ -1,0 +1,8 @@
+Enter text:123
+123
+Enter text:456
+456
+Enter text:789
+789
+Enter text:stop
+Bye

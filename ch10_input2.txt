@@ -1,0 +1,20 @@
+Enter text:1
+1
+Enter text:2
+4
+Enter text:3
+9
+Enter text:4
+16
+Enter text:5
+25
+Enter text:6
+36
+Enter text:7
+49
+Enter text:abc
+Bad!Bad!Bad!Bad!Bad!Bad!Bad!Bad!
+Enter text:0x7
+Bad!Bad!Bad!Bad!Bad!Bad!Bad!Bad!
+Enter text:stop
+Bye
