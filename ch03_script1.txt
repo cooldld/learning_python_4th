@@ -1,0 +1,4 @@
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...

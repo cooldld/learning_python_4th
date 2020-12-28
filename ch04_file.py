@@ -1,4 +1,4 @@
-file_name = 'ch04_data.txt'
+file_name = 'ch04_file.data'
 
 print('open and write file', file_name)
 f = open(file_name, 'w')

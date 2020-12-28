@@ -1,0 +1,8 @@
+dir(T) = ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+T = (1, 2, 3, 4, 'aa')
+len(T) = 5
+T[0] = 1
+T + (21, 22) = (1, 2, 3, 4, 'aa', 21, 22)
+T.index(4) = 3
+T.count(4) = 1
+T.index(aa) = 4

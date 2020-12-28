@@ -1,0 +1,5 @@
+L = [1, 2, 3, 4]
+type(L) = <class 'list'>
+type(L) is type([])
+type(L) is list
+L isinstance list

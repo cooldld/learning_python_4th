@@ -1,0 +1,20 @@
+dir(D) = ['__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+D = {'color': 'pink', 'quantity': 4, 'food': 'spam'}
+D[food] = spam
+quantity +=1, D = {'color': 'pink', 'quantity': 5, 'food': 'spam'}
+D = {'age': 40, 'job': 'dev', 'name': 'Bob'}
+rec = {'age': 40.5, 'job': ['dev', 'mgr'], 'name': {'first': 'Bob', 'last': 'Smith'}}
+D = {'a': 1, 'c': 3, 'b': 2}
+list(D.keys()) = ['a', 'c', 'b']
+keys.sort = ['a', 'b', 'c']
+a => 1
+b => 2
+c => 3
+D = {'a': 1, 'c': 3, 'b': 2}
+a => 1
+b => 2
+c => 3
+b in D
+f not in D
+D.get(x, -1) = -1
+value = -2
