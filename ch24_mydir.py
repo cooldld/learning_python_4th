@@ -22,7 +22,7 @@ def listing(module, verbose = True):
         count += 1
 
     if verbose:
-        print(module.__name__, 'has %d names', count)
+        print(module.__name__, 'has %d names' % (count))
         print(sepline)
 
 if __name__ == '__main__':

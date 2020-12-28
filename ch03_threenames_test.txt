@@ -1,0 +1,5 @@
+[0, 1, 2, 3] parrot sketch
+parrot sketch
+['x', 1, 2, 3] hello sketch
+['y', 1, 2, 3] hello sketch
+['__builtins__', '__cached__', '__doc__', '__file__', '__initializing__', '__loader__', '__name__', '__package__', 'a', 'b', 'c']

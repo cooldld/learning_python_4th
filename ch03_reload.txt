@@ -1,0 +1,25 @@
+import ch03_script1
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...
+reload(ch03_script1), 0
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...
+reload(ch03_script1), 1
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...
+reload(ch03_script1), 2
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...
+reload(ch03_script1), 3
+sys.platform = linux
+2 ** 10 = 1024
+x = Spam!, x * 8 = Spam!Spam!Spam!Spam!Spam!Spam!Spam!Spam!
+The Bright Side of Life...

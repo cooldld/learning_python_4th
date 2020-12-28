@@ -1,0 +1,1 @@
+os.getcwd() = /home/mango/src/learning_python_4th

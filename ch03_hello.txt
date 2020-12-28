@@ -1,0 +1,3 @@
+Hello world!
+256
+__name__ = __main__
