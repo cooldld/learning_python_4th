@@ -1,0 +1,19 @@
+class c_general(Exception): pass
+class c_specific1(c_general): pass
+class c_specific2(c_general): pass
+class c_specific3(c_specific2): pass
+
+def raise_general(): raise c_general()
+
+def raise_specific1(): raise c_specific1()
+
+def raise_specific2(): raise c_specific2()
+
+def raise_specific3(): raise c_specific3()
+
+for func in (raise_general, raise_specific1, raise_specific2, raise_specific3)
+except c_general as x
+exception <class '__main__.c_general'>
+exception <class '__main__.c_specific1'>
+exception <class '__main__.c_specific2'>
+exception <class '__main__.c_specific3'>
