@@ -1,0 +1,24 @@
+class c_list(list)
+
+self test
+x = list('abc')
+x = ['a', 'b', 'c']
+y = c_list('abc')
+y = ['a', 'b', 'c']
+
+x[0] = a
+c_list.__getitem__(), offset = 0
+y[0] = c
+x[2] = c
+c_list.__getitem__(), offset = 2
+y[2] = b
+
+x.append('spam')
+x = ['a', 'b', 'c', 'spam']
+y.append('spam')
+y = ['a', 'b', 'c', 'spam']
+
+x.reverse()
+x = ['spam', 'c', 'b', 'a']
+y.reverse()
+y = ['spam', 'c', 'b', 'a']

@@ -1,0 +1,16 @@
+class c_spam, use staticmethod
+
+a = c_spam()
+b = c_spam()
+c = c_spam()
+
+c_spam.print_num()
+c_spam.print_num, num = 3
+
+a.print_num()
+c_spam.print_num, num = 3
+
+class c_other(c_spam): pass
+
+c_other.print_num()
+c_spam.print_num, num = 3

@@ -1,4 +1,4 @@
-print('class c_spam, use function decorator')
+print('class c_spam, use staticmethod')
 class c_spam:
     num = 0
     def __init__(self):

@@ -1,0 +1,29 @@
+class c_x, attr a = 1
+
+x = c_x()
+c_x.a = 1
+x.a = 1
+
+修改了c_x类的属性a
+set c_x.a = 3
+
+c_x.a = 3
+x.a = 3
+
+修改了c_x类实例x的属性a
+set x.a = 5
+
+c_x.a = 3
+x.a = 5
+
+class c_x: pass
+
+x = c_x()
+c_x类实例x添加了属性a
+set x.a = 1
+x.a = 1
+
+c_x类添加了属性a
+set c_x.a = 3
+c_x.a = 3
+x.a = 1

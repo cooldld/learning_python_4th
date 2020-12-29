@@ -1,0 +1,8 @@
+def count(a_class)
+
+class c_spam: pass
+c_spam = <class '__main__.c_spam'>
+
+@count
+class c_spam: pass
+c_spam = <__main__.c_spam object at 0xb6fcc3cc>
