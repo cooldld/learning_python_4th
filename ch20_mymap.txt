@@ -1,0 +1,24 @@
+s1 = abc, s2 = xyz123
+list(zip(s1, s2)) = [('a', 'x'), ('b', 'y'), ('c', 'z')]
+list(zip([-2, -1, 0, 1, 2])) = [(-2,), (-1,), (0,), (1,), (2,)]
+list(zip([1, 2, 3], [10, 20, 30, 40])) = [(1, 10), (2, 20), (3, 30)]
+list(map(abs, [-2, -1, 0, 1, 2])) = [2, 1, 0, 1, 2]
+list(map(pow, [1, 2, 3], [2, 3, 4, 5])) = [1, 8, 81]
+
+def mymap(func, *seqs), many ways
+
+#work alike with zip
+list(mymap(abs, [-2, -1, 0, 1, 2])) = [2, 1, 0, 1, 2]
+list(mymap(pow, [1, 2, 3], [2, 3, 4, 5])) = [1, 8, 81]
+
+#using a list comprehension
+list(mymap(abs, [-2, -1, 0, 1, 2])) = [2, 1, 0, 1, 2]
+list(mymap(pow, [1, 2, 3], [2, 3, 4, 5])) = [1, 8, 81]
+
+#using generators: yield
+list(mymap(abs, [-2, -1, 0, 1, 2])) = [2, 1, 0, 1, 2]
+list(mymap(pow, [1, 2, 3], [2, 3, 4, 5])) = [1, 8, 81]
+
+#using generators: (...)
+list(mymap(abs, [-2, -1, 0, 1, 2])) = [2, 1, 0, 1, 2]
+list(mymap(pow, [1, 2, 3], [2, 3, 4, 5])) = [1, 8, 81]

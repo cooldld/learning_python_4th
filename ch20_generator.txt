@@ -1,0 +1,104 @@
+def gensquares(N): for i in range(N): yield i ** 2
+gensquares = <function gensquares at 0xb70b077c>
+for i in gensquares(5)
+0
+1
+4
+9
+16
+
+x = gensquares(5), x = <generator object gensquares at 0xb709257c>
+dir(x) = ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
+next(x) = 0
+x.__next__() = 1
+next(x) = 4
+x.__next__() = 9
+next(x) = 16
+
+error!!!
+StopIteration
+print('next(x) =', next(x))
+or
+print('x.__next__() =', x.__next__())
+
+******************************
+how to use send with yield
+def gen()
+g = gen(), g = <generator object gen at 0xb70925cc>
+
+call next(g)
+gen, before yield, i = 0
+next(g) = 0
+
+call next(g)
+gen, after yield, x = None
+gen, before yield, i = 1
+next(g) = 0
+
+call next(g)
+gen, after yield, x = None
+gen, before yield, i = 2
+next(g) = 0
+
+call g.send(21)
+gen, after yield, x = 21
+gen, before yield, i = 3
+g.send(21) = 3
+
+call g.send(41)
+gen, after yield, x = 41
+gen, before yield, i = 4
+g.send(41) = 3
+
+call next(g)
+gen, after yield, x = None
+gen, before yield, i = 5
+next(g) = 3
+
+call next(g)
+gen, after yield, x = None
+gen, before yield, i = 6
+next(g) = 3
+
+call g.send('hello')
+gen, after yield, x = hello
+gen, before yield, i = 7
+g.send('hello') = 3
+
+call next(g)
+gen, after yield, x = None
+gen, before yield, i = 8
+next(g) = 3
+
+[x ** 2 for x in range(4)] = [0, 1, 4, 9]
+(x ** 2 for x in range(4)) = <generator object <genexpr> at 0xb709293c>
+next(G) = 0
+next(G) = 1
+list(G) = [4, 9]
+
+for num in (x ** 2 for x in range(4))
+num = 0
+num = 1
+num = 4
+num = 9
+
+G = (c * 4 for c in 'SPAM'), G = <generator object <genexpr> at 0xb7092964>
+list(G) = ['SSSS', 'PPPP', 'AAAA', 'MMMM']
+
+def timesfour(s)
+G = timesfour('SPAM'), G = <generator object timesfour at 0xb709298c>
+list(G) = ['SSSS', 'PPPP', 'AAAA', 'MMMM']
+
+G = (c * 4 for c in 'SPAM'), G = <generator object <genexpr> at 0xb7092964>
+I1 = iter(G), I1 = <generator object <genexpr> at 0xb7092964>
+next(I1) = SSSS
+next(I1) = PPPP
+I2 = iter(G), I2 = <generator object <genexpr> at 0xb7092964>
+next(I2) = AAAA
+L = [1, 2, 3, 4]
+I1 = iter(L), I1 = <list_iterator object at 0xb706f34c>
+next(I1) = 1
+next(I1) = 2
+I2 = iter(L), I2 = <list_iterator object at 0xb706f3ac>
+next(I2) = 1
+next(I2) = 2

@@ -1,0 +1,12 @@
+[ord(x) for x in 'spam'] = [115, 112, 97, 109]
+[x ** 2 for x in range(10)] = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+list(map((lambda x: x ** 2), range(10))) = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+[x for x in range(5) if x % 2 == 0] = [0, 2, 4]
+list(map((lambda x: x ** 2), filter((lambda x: x % 2 == 0), range(10)))) = [0, 4, 16, 36, 64]
+
+[x + y for x in [0, 1, 2] for y in [10, 20, 30]] = [10, 20, 30, 11, 21, 31, 12, 22, 32]
+[x + y for x in 'abc' for y in '12'] = ['a1', 'a2', 'b1', 'b2', 'c1', 'c2']
+
+listoftuple = [('bob', 35, 'mgr'), ('mel', 40, 'dev')]
+[age for (name, age, job) in listoftuple] = [35, 40]
+list(map((lambda row: row[1]), listoftuple)) = [35, 40]

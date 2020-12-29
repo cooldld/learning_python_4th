@@ -1,0 +1,26 @@
+g = cf(5), g = <generator object cf at 0xb707ba04>
+
+必须通过send(None)来启动生成器
+call g.send(None)
+before yield, x=5, i=0
+ret = 0
+
+call g.send('a')
+after yield, x=5, i=0, n=a
+before yield, x=5, i=1
+ret = 1
+
+call g.send('b')
+after yield, x=5, i=1, n=b
+before yield, x=5, i=2
+ret = 2
+
+call g.send('c')
+after yield, x=5, i=2, n=c
+before yield, x=5, i=3
+ret = 3
+
+call g.send('d')
+after yield, x=5, i=3, n=d
+before yield, x=5, i=4
+ret = 4

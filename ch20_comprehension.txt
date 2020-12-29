@@ -1,0 +1,19 @@
+#list comprehension
+[x * x for x in range(10)] = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+[x * x for x in range(10) if x % 2 == 0] = [0, 4, 16, 36, 64]
+[x + y for x  in [1, 2, 3] for y in [100, 200, 300]] = [101, 201, 301, 102, 202, 302, 103, 203, 303]
+
+#generator expression
+(x * x for x in range(10)) = <generator object <genexpr> at 0xb6fee194>
+(x * x for x in range(10) if x % 2 == 0) = <generator object <genexpr> at 0xb6fee1bc>
+
+#set comprehension
+{x * x for x in range(10)} = {0, 1, 4, 81, 64, 9, 16, 49, 25, 36}
+{x * x for x in range(10) if x % 2 == 0} = {0, 16, 4, 64, 36}
+{x + y for x  in [1, 2, 3] for y in [100, 200, 300]} = {101, 102, 103, 201, 202, 203, 301, 302, 303}
+{x + y for x  in [1, 2, 3] for y in [1, 2, 3]} = {2, 3, 4, 5, 6}
+
+#dict comprehension
+{x: x * x for x in range(10)} = {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+{x: x * x for x in range(10) if x % 2 == 0} = {0: 0, 8: 64, 2: 4, 4: 16, 6: 36}
+{x: y for x  in [1, 2, 3] for y in [100, 200, 300]} = {1: 300, 2: 300, 3: 300}

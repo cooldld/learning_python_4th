@@ -1,0 +1,11 @@
+s1 = abc, s2 = xyz123
+myzip(s1, s2) = [('a', 'x'), ('b', 'y'), ('c', 'z')]
+myzip_pad(s1, s2) = [('a', 'x'), ('b', 'y'), ('c', 'z'), (None, '1'), (None, '2'), (None, '3')]
+myzip_pad(s1, s2, pad='null') = [('a', 'x'), ('b', 'y'), ('c', 'z'), ('null', '1'), ('null', '2'), ('null', '3')]
+list(myzip(s1, s2)) = [('a', 'x'), ('b', 'y'), ('c', 'z')]
+list(myzip_pad(s1, s2)) = [('a', 'x'), ('b', 'y'), ('c', 'z'), (None, '1'), (None, '2'), (None, '3')]
+list(myzip_pad(s1, s2, pad='null')) = [('a', 'x'), ('b', 'y'), ('c', 'z'), ('null', '1'), ('null', '2'), ('null', '3')]
+myzip(s1, s2) = [('a', 'x'), ('b', 'y'), ('c', 'z')]
+myzip_pad(s1, s2) = [('a', 'x'), ('b', 'y'), ('c', 'z'), (None, '1'), (None, '2'), (None, '3')]
+myzip_pad(s1, s2, pad='null') = [('a', 'x'), ('b', 'y'), ('c', 'z'), ('null', '1'), ('null', '2'), ('null', '3')]
+list(myzip(s1, s2)) = [('a', 'x'), ('b', 'y'), ('c', 'z')]

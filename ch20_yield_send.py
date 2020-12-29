@@ -7,17 +7,11 @@ n = yield r可以理解为yield在发送n的同时也在接收r值
 通过produce(c)调用后，一旦有n值，则切换到 consumer去执行。执行完了后生成器关闭
 '''
 
-cf_str='''
 def cf(x):
     for i in range(x):
         print('before yield, x={0}, i={1}'.format(x, i))
         n = yield i
         print('after yield, x={0}, i={1}, n={2}'.format(x, i, n))
-'''
-
-print(cf_str)
-print('exec(cf_str)')
-exec(cf_str)
 
 g = cf(5)
 print('g = cf(5), g =', g)
@@ -48,9 +42,9 @@ print("call g.send('d')")
 ret = g.send('d')
 print('ret =', ret)
 
-print('''
+'''
 StopIteration
 print("call g.send('e')")
 ret = g.send('e')
 print('ret =', ret)
-''')
+'''

@@ -27,8 +27,9 @@ L = [age for (name, age, job) in listoftuple]
 print('[age for (name, age, job) in listoftuple] =', L)
 L = list(map((lambda row: row[1]), listoftuple))
 print('list(map((lambda row: row[1]), listoftuple)) =', L)
-print('''
+
+'''
 error!!!
 #2.6 only
 L = list(map((lambda (name, age, job): age), listoftuple))
-''')
+'''

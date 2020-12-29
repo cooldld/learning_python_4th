@@ -1,0 +1,14 @@
+module2, starting to load...
+module2, done loading...
+
+ch22_module2.sys = <module 'sys' (built-in)>
+
+ch22_module2.name = 42
+
+ch22_module2.func = <function func at 0xb700277c>
+
+ch22_module2.klass = <class 'ch22_module2.klass'>
+
+list(ch22_module2.__dict__.keys()) = ['__name__', 'sys', '__package__', '__initializing__', 'klass', '__cached__', '__file__', '__builtins__', '__doc__', '__loader__', 'name', 'func']
+
+dir(ch22_module2) = ['__builtins__', '__cached__', '__doc__', '__file__', '__initializing__', '__loader__', '__name__', '__package__', 'func', 'klass', 'name', 'sys']
