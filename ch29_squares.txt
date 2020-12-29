@@ -1,0 +1,38 @@
+class Squares, use __iter__ and __next__ to iteration
+
+for i in Squares(1, 5)
+Squares.__iter__, self = <__main__.Squares object at 0xb707544c>
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+i = 1
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+i = 4
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+i = 9
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+i = 16
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+i = 25
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+
+x = Squares(1, 5)
+i = iter(x)
+Squares.__iter__, self = <__main__.Squares object at 0xb707544c>
+i = <__main__.Squares object at 0xb707544c>
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+next(i) = 1
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+next(i) = 4
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+next(i) = 9
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+next(i) = 16
+Squares.__next__, self = <__main__.Squares object at 0xb707544c>
+next(i) = 25
+def gsquares(start, stop)
+
+for i in gsquares(1, 5)
+i = 1
+i = 4
+i = 9
+i = 16
+i = 25

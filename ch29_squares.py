@@ -22,11 +22,11 @@ print()
 print('x = Squares(1, 5)')
 x = Squares(1, 5)
 
-print('''
+'''
 error!!!
 TypeError: 'Squares' object does not support indexing
 print(x[0])
-''')
+'''
 
 print('i = iter(x)')
 i = iter(x)
@@ -37,11 +37,11 @@ print('next(i) =', next(i))
 print('next(i) =', next(i))
 print('next(i) =', next(i))
 
-print('''
+'''
 error!!!
 StopIteration
 print('next(i) =', next(i))
-''')
+'''
 
 print('def gsquares(start, stop)')
 def gsquares(start, stop):

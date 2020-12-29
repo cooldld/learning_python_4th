@@ -1,0 +1,5 @@
+class Number
+
+x = Number(5)
+y = x - 2
+y.data = 3

@@ -1,0 +1,42 @@
+class Indexer, use __getitem__() to index
+
+x = Indexer()
+x[3] = 9
+
+for i in range(5)
+x[0] = 0
+x[1] = 1
+x[2] = 4
+x[3] = 9
+x[4] = 16
+
+class Indexer, use __getitem__() and __setitem__() to slice
+
+x = Indexer()
+x.data = [5, 6, 7, 8, 9]
+
+for i in range(5)
+Indexer.__getitem__, index = 0
+x[0] = 5
+Indexer.__getitem__, index = 1
+x[1] = 6
+Indexer.__getitem__, index = 2
+x[2] = 7
+Indexer.__getitem__, index = 3
+x[3] = 8
+Indexer.__getitem__, index = 4
+x[4] = 9
+Indexer.__getitem__, index = -1
+x[-1] = 9
+Indexer.__getitem__, index = slice(2, 4, None)
+x[2:4] = [7, 8]
+Indexer.__getitem__, index = slice(1, None, None)
+x[1:] = [6, 7, 8, 9]
+Indexer.__getitem__, index = slice(None, -1, None)
+x[:-1] = [5, 6, 7, 8]
+Indexer.__getitem__, index = slice(None, None, 2)
+x[::2] = [5, 7, 9]
+
+x.data = [5, 6, 7, 8, 9]
+x[3] = 1
+x.data = [5, 6, 7, 1, 9]

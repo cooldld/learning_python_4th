@@ -30,14 +30,14 @@ print()
 print("x.name = 'Bob'")
 x.name = 'Bob'
 
-print('''
+'''
 error!!!
 __main__.PrivateExc: ('name', <__main__.Test2 object at 0xb703bb6c>)
 y.name = 'Sue'
 
 __main__.PrivateExc: ('age', <__main__.Test1 object at 0xb707fb2c>)
 x.age = 30
-''')
+'''
 
 print('y.age = 40')
 y.age = 40

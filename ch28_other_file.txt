@@ -1,0 +1,16 @@
+import ch28_many_names as many_names
+other_file, set x to 66
+x = 66
+many_names.x = 11
+many_names.f()
+f(), x = 11
+many_names.g()
+g(), set x to 22
+g(), x = 22
+many_names.C.x = 33
+I = many_names.C()
+I.x = 33
+call I.m()
+C.m(), set x to 44
+C.m(), set self.x to 55
+I.x = 55

@@ -1,0 +1,5 @@
+class empty, def __getattr__
+
+x = empty()
+call __getattr__, attrname = age
+x.age = 40

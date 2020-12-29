@@ -1,0 +1,28 @@
+s = abc
+
+字符串s有两个独立的迭代器对象x和y
+for x in s
+for y in s
+x + y =
+aa ab ac ba bb bc ca cb cc 
+
+class Skip_iterator
+
+class Skip_object
+
+self test
+alpha = abc
+skipper = Skip_object(alpha)
+I1 = iter(skipper)
+I2 = iter(skipper)
+next(I1) = a
+next(I2) = a
+next(I1) = b
+next(I1) = c
+next(I2) = b
+next(I2) = c
+
+for x in skipper
+for y in skipper
+x + y =
+aa ab ac ba bb bc ca cb cc 

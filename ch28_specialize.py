@@ -24,11 +24,11 @@ class Provider(Super):
     def action(self):
         print('in Provider.action')
 
-print('''
+'''
 error!!!
 NotImplementedError: action() not defined!
 Inheritor().action()
-''')
+'''
 
 if __name__ == '__main__':
     for cls in (Inheritor, Replacer, Extender):

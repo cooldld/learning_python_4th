@@ -1,0 +1,32 @@
+class Commuter, def __add__/__radd__
+
+x = Commuter(1)
+y = Commuter(100)
+x + 1
+__add__, val = 1, other = 1
+2
+1 + y
+__radd__, val = 100, other = 1
+101
+x + y
+__add__, val = 1, other = <__main__.Commuter object at 0xb6fe196c>
+__radd__, val = 100, other = 1
+101
+
+class Commuter, def __add__/__radd__, improved
+
+x = Commuter(1)
+y = Commuter(100)
+z = x + 1
+__add__, val = 1, other = 1
+z = __repr__, val = 2
+Commuter, val = 2
+z = 1 + y
+__radd__, val = 100, other = 1
+z = __repr__, val = 101
+Commuter, val = 101
+z = x + y
+__repr__, val = 100
+__add__, val = 1, other = Commuter, val = 100
+z = __repr__, val = 101
+Commuter, val = 101

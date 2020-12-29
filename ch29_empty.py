@@ -12,8 +12,8 @@ print('x = empty()')
 x = empty()
 print('x.age =', x.age)
 
-print('''
+'''
 error!!!
 AttributeError: height
 print('x.height =', x.height)
-''')
+'''

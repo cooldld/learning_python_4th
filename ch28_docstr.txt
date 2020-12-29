@@ -1,0 +1,40 @@
+self test
+docstr.__doc__ = I am: docstr.__doc__
+docstr.func.__doc__ = I am: docstr.func.__doc__
+docstr.spam.__doc__ = I am: spam.__doc__ or docstr.spam.__doc__
+docstr.spam.method.__doc__ = I am: spam.method.__doc__ or docstr.spam.method.__doc__
+call help(docstr)
+Help on module ch28_docstr:
+
+NAME
+    ch28_docstr - I am: docstr.__doc__
+
+CLASSES
+    builtins.object
+        spam
+    
+    class spam(builtins.object)
+     |  I am: spam.__doc__ or docstr.spam.__doc__
+     |  
+     |  Methods defined here:
+     |  
+     |  method(self, arg)
+     |      I am: spam.method.__doc__ or docstr.spam.method.__doc__
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+FUNCTIONS
+    func(args)
+        I am: docstr.func.__doc__
+
+FILE
+    /home/mango/src/learning_python_4th/ch28_docstr.py
+
+

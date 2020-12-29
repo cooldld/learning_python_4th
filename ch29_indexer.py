@@ -9,11 +9,11 @@ x = Indexer()
 
 print('x[3] =', x[3])
 
-print('''
+'''
 error!!!
 TypeError: 'Indexer' object does not support item assignment
 x[3] = 1
-''')
+'''
 
 print()
 print('for i in range(5)')

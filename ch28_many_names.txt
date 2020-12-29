@@ -1,0 +1,15 @@
+self test
+x = 11
+call f()
+f(), x = 11
+call g()
+g(), set x to 22
+g(), x = 22
+x = 11
+obj = C()
+obj.x = 33
+call obj.m()
+C.m(), set x to 44
+C.m(), set self.x to 55
+obj.x = 55
+C.x = 33

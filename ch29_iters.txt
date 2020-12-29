@@ -1,0 +1,63 @@
+class Iters, def __getitem__/__iter__/__next__/__contains__
+
+x = Iters([1, 2, 3, 4, 5])
+
+3 in x
+Iters.__contains__, x = 3
+True
+
+for i in x
+Iters.__iter__
+Iters.__next__
+i = 1
+Iters.__next__
+i = 2
+Iters.__next__
+i = 3
+Iters.__next__
+i = 4
+Iters.__next__
+i = 5
+Iters.__next__
+
+i = iter(x)
+Iters.__iter__
+Iters.__next__
+next(i) = 1
+Iters.__next__
+next(i) = 2
+Iters.__next__
+next(i) = 3
+Iters.__next__
+next(i) = 4
+Iters.__next__
+next(i) = 5
+Iters.__next__
+
+[i ** 2 for i in x]
+Iters.__iter__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+[1, 4, 9, 16, 25]
+
+list(map(bin, x))
+Iters.__iter__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+Iters.__next__
+['0b1', '0b10', '0b11', '0b100', '0b101']
+
+x = Iters('spam')
+Iters.__getitem__, i = 0
+x[0] = s
+Iters.__getitem__, i = slice(1, None, None)
+x[1:] = pam
+Iters.__getitem__, i = slice(None, -1, None)
+x[:-1] = spa

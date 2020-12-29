@@ -1,0 +1,17 @@
+class Number, def __iadd__
+
+x = Number(5)
+x += 1
+__iadd__, val = 5, other = 1
+x += 1
+__iadd__, val = 6, other = 1
+x.val = 7
+
+class Number, def __add__
+
+x = Number(15)
+x += 1
+__add__, val = 15, other = 1
+x += 1
+__add__, val = 16, other = 1
+x.val = 17

@@ -1,0 +1,11 @@
+class Privacy, def __setattr__
+
+class Test1(Privacy)
+
+class Test2(Privacy)
+
+x = Test1()
+y = Test2()
+
+x.name = 'Bob'
+y.age = 40

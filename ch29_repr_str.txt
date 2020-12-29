@@ -1,0 +1,30 @@
+class adder, def __add__
+
+x = adder()
+x = <__main__.adder object at 0xb6fd58ec>
+
+class addrepr(adder), def __repr__
+
+x = addrepr()
+x = call __repr__
+addrepr, data = 0
+x + 1
+x = call __repr__
+addrepr, data = 1
+x + 10
+x = call __repr__
+addrepr, data = 11
+
+call __repr__
+repr(x) = addrepr, data = 11
+call __repr__
+str(x) = addrepr, data = 11
+
+class addboth(adder), def __str__/__repr__
+
+x = addboth()
+x = call __str__
+addboth, data = 0
+x + 1
+x = call __str__
+addboth, data = 1

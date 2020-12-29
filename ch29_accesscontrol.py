@@ -17,8 +17,8 @@ print('x.age = 40')
 x.age = 40
 print('dir(x) =', dir(x))
 
-print('''
+'''
 error!!!
 AttributeError: name not allowed
 x.name = 'spam'
-''')
+'''

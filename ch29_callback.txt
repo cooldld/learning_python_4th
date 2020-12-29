@@ -1,0 +1,8 @@
+class Callback, def __call__
+
+cb1 = Callback('blue')
+cb2 = Callback('green')
+cb1()
+__call__, color = blue
+cb2()
+__call__, color = green

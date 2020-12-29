@@ -1,0 +1,16 @@
+class Life, def __del__
+
+x = Life('manba')
+__init__, hello, name = manba
+x = <__main__.Life object at 0xb700544c>
+x.name = manba
+
+y = x
+y = <__main__.Life object at 0xb700544c>
+y.name = manba
+
+x = 'nihao'
+
+y = <__main__.Life object at 0xb700544c>
+y.name = manba
+__del__, goodbye, name = manba

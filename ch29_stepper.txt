@@ -1,0 +1,38 @@
+class stepper, use __getitem__() to iterate
+
+x = stepper()
+x.data = 'spam'
+
+for item in x
+stepper.__getitem__, i = 0
+item = s
+stepper.__getitem__, i = 1
+item = p
+stepper.__getitem__, i = 2
+item = a
+stepper.__getitem__, i = 3
+item = m
+stepper.__getitem__, i = 4
+
+stepper.__getitem__, i = 0
+stepper.__getitem__, i = 1
+'p' in x = True
+stepper.__getitem__, i = 0
+stepper.__getitem__, i = 1
+stepper.__getitem__, i = 2
+stepper.__getitem__, i = 3
+stepper.__getitem__, i = 4
+[c for c in x] = ['s', 'p', 'a', 'm']
+stepper.__getitem__, i = 0
+stepper.__getitem__, i = 1
+stepper.__getitem__, i = 2
+stepper.__getitem__, i = 3
+stepper.__getitem__, i = 4
+list(map(str.upper, x)) = ['S', 'P', 'A', 'M']
+(a, b, c, d) = x
+stepper.__getitem__, i = 0
+stepper.__getitem__, i = 1
+stepper.__getitem__, i = 2
+stepper.__getitem__, i = 3
+stepper.__getitem__, i = 4
+a = s, b = p, c = a, d = m

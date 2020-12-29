@@ -1,0 +1,4 @@
+class lt_gt, def __gt__/__lt__
+x = lt_gt()
+x > 'ham' = True
+x < 'ham' = False
