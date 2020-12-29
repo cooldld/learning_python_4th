@@ -1,4 +1,3 @@
-exec_str = '''
 class first_class:
     def setdata(self, value):
         self.data = value
@@ -16,10 +15,6 @@ t = third_class()
 
 s.setdata(42)
 t.setdata(42)
-'''
-
-print(exec_str)
-exec(exec_str)
 
 print('s.display()')
 s.display()

@@ -1,4 +1,3 @@
-exec_str = '''
 class C2: pass
 
 class C3: pass
@@ -7,16 +6,12 @@ class C1(C2, C3):
     #def __init__(self, who = None):
     def __init__(self, who):
         self.name = who
+
 '''
-
-print(exec_str)
-exec(exec_str)
-
-print('''
 error!!!
 TypeError: __init__() missing 1 required positional argument: 'who'
 I1 = C1()
-''')
+'''
 
 print("I1 = C1('bob')")
 I1 = C1('bob')

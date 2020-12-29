@@ -1,11 +1,11 @@
-print('''
+'''
 通过一个空类产生的实例来记录信息
 class Person1: pass
 
 person_a = Person1()
 person_a.name = 'bob'
 person_a.job = 'trainer'
-''')
+'''
 
 print('class Person2')
 class Person2:

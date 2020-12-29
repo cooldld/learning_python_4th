@@ -1,4 +1,3 @@
-exec_str = '''
 class First_class:
     def setdata(self, value):
         self.data = value
@@ -18,9 +17,6 @@ class Third_class(Second_class):
         return '[Third_class: %s]' % self.data
     def mul(self, other):
         self.data *= other
-'''
-print(exec_str)
-exec(exec_str)
 
 print("a = Third_class('abc')")
 a = Third_class('abc')

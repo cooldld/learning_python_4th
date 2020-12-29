@@ -1,0 +1,5 @@
+I1 = C1('bob')
+I1.name = bob
+
+I2 = C1('tom')
+I2.name = tom

@@ -1,0 +1,8 @@
+I1 = C1()
+I1.setname('bob')
+I1.name = bob
+
+I2 = C1()
+I2.setname('tom')
+I2.name = tom
+I1.name = bob

@@ -1,0 +1,4 @@
+class Person2
+person_b = Person2('mel', 'trainer')
+person_c = Person2('vls', 'developer')
+person_b.name = mel, person_c.name = vls

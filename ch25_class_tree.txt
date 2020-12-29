@@ -1,0 +1,3 @@
+I1 = <__main__.C1 object at 0xb6f8644c>
+I2 = <__main__.C2 object at 0xb6f8646c>
+I3 = <__main__.C3 object at 0xb6f8648c>

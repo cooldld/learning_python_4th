@@ -1,0 +1,33 @@
+a = Third_class('abc')
+a = [Third_class: abc]
+a.display()
+Second_class, self.data = abc
+
+a.mul(3)
+a.display()
+Second_class, self.data = abcabcabc
+
+b = a + '123'
+b = [Third_class: abcabcabc123]
+b.display()
+Second_class, self.data = abcabcabc123
+
+c = Third_class(11)
+c = [Third_class: 11]
+c.display()
+Second_class, self.data = 11
+
+c.mul(3)
+c.display()
+Second_class, self.data = 33
+
+d = c + 100
+d = [Third_class: 133]
+d.display()
+Second_class, self.data = 133
+
+每个实例都可以通过__class__属性查看创建自己的类
+d.__class__ = <class '__main__.Third_class'>
+
+每个类都可以通过__bases__属性查看自己的超类
+Third_class.__bases__ = (<class '__main__.Second_class'>,)

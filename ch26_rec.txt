@@ -1,0 +1,26 @@
+class rec: pass
+dir(rec) = ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__']
+rec.name = 'bob'
+rec.age = 40
+dir(rec) = ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'age', 'name']
+x = rec()
+x.name = bob
+x.name = 'hello'
+x.name = hello
+y = rec()
+
+rec.name = bob, x.name = hello, y.name = bob
+
+类的字典信息中只会显示已经赋值了的属性
+rec.__dict__.keys = ['__module__', 'name', '__weakref__', '__doc__', '__dict__', 'age']
+x.__dict__.keys = ['name']
+y.__dict__.keys = []
+
+def upper_name(self)
+uppter_name(x) = HELLO
+
+通过手工赋值，给rec类添加了属性upper_name方法
+rec.upper_name = uppper_name
+x.upper_name() = HELLO
+y.upper_name() = BOB
+rec.upper_name(x) = HELLO
