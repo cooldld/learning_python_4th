@@ -1,0 +1,51 @@
+import ch24_mydir
+help(ch24_mydir)
+Help on module ch24_mydir:
+
+NAME
+    ch24_mydir - ch24_mydir.py: a module that lists the namespaces of other modules
+
+FUNCTIONS
+    listing(module, verbose=True)
+
+DATA
+    sepchr = '-'
+    seplen = 60
+
+FILE
+    /home/mango/src/learning_python_4th/ch24_mydir.py
+
+
+import string
+ch24_mydir.listing(string)
+listing all names of module string
+------------------------------------------------------------
+name = string, file = /usr/lib/python3.3/string.py
+00) punctuation : !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+01) __doc__ : <built-in name>
+02) octdigits : 01234567
+03) capwords : <function capwords at 0xb701d9bc>
+04) digits : 0123456789
+05) ascii_letters : abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+06) __package__ : <built-in name>
+07) __cached__ : <built-in name>
+08) __file__ : <built-in name>
+09) Formatter : <class 'string.Formatter'>
+10) ascii_uppercase : ABCDEFGHIJKLMNOPQRSTUVWXYZ
+11) __builtins__ : <built-in name>
+12) __name__ : <built-in name>
+13) __initializing__ : <built-in name>
+14) printable : 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~ 	
+
+15) __loader__ : <built-in name>
+16) _TemplateMetaclass : <class 'string._TemplateMetaclass'>
+17) whitespace :  	
+
+18) Template : <class 'string.Template'>
+19) ascii_lowercase : abcdefghijklmnopqrstuvwxyz
+20) _string : <module '_string' (built-in)>
+21) hexdigits : 0123456789abcdefABCDEF
+22) _re : <module 're' from '/usr/lib/python3.3/re.py'>
+23) ChainMap : <class 'collections.ChainMap'>
+string has 24 names
+------------------------------------------------------------

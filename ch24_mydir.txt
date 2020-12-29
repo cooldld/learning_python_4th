@@ -1,0 +1,19 @@
+__main__ self test
+import ch24_mydir
+listing(ch24_mydir)
+listing all names of module ch24_mydir
+------------------------------------------------------------
+name = ch24_mydir, file = /home/mango/src/learning_python_4th/ch24_mydir.py
+00) __loader__ : <built-in name>
+01) __package__ : <built-in name>
+02) __doc__ : <built-in name>
+03) __cached__ : <built-in name>
+04) __file__ : <built-in name>
+05) listing : <function listing at 0xb7094c44>
+06) seplen : 60
+07) __name__ : <built-in name>
+08) __builtins__ : <built-in name>
+09) __initializing__ : <built-in name>
+10) sepchr : -
+ch24_mydir has 11 names
+------------------------------------------------------------

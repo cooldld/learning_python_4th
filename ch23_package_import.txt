@@ -1,0 +1,43 @@
+import ch23_dir1.ch23_dir2
+ch23_dir1 init
+ch23_dir2 init
+
+import ch23_dir1.ch23_dir2.mod
+in mod.py
+import string
+
+import ch23_dir1.ch23_dir2.mod
+
+ch23_dir1 = <module 'ch23_dir1' from '/home/mango/src/learning_python_4th/ch23_dir1/__init__.py'>
+ch23_dir1.x = 1
+ch23_dir1.ch23_dir2 = <module 'ch23_dir1.ch23_dir2' from '/home/mango/src/learning_python_4th/ch23_dir1/ch23_dir2/__init__.py'>
+ch23_dir1.ch23_dir2.y = 2
+ch23_dir1.ch23_dir2.mod = <module 'ch23_dir1.ch23_dir2.mod' from '/home/mango/src/learning_python_4th/ch23_dir1/ch23_dir2/mod.py'>
+ch23_dir1.ch23_dir2.mod.z = 3
+
+ch23_dir1.ch23_dir2.mod.string = <module 'string' from '/usr/lib/python3.3/string.py'>
+import ch23_dir1.ch23_dir2.mod2
+in mod2.py
+from . import string
+dir2 string module
+ch23_dir1.ch23_dir2.mod2.string = <module 'ch23_dir1.ch23_dir2.string' from '/home/mango/src/learning_python_4th/ch23_dir1/ch23_dir2/string.py'>
+
+from imp import reload
+
+reload(ch23_dir1.ch23_dir2)
+ch23_dir2 init
+
+reload(ch23_dir1)
+ch23_dir1 init
+
+reload(ch23_dir1.ch23_dir2)
+ch23_dir2 init
+
+from ch23_dir1.ch23_dir2 import mod
+mod.z = 3
+
+from ch23_dir1.ch23_dir2.mod import z
+z = 3
+
+import ch23_dir1.ch23_dir2.mod as modxx
+modxx.z = 3

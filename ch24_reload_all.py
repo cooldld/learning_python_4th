@@ -1,5 +1,5 @@
 '''
-ch24_reloadall.py: transitively reload nested modules
+ch24_reload_all.py: transitively reload nested modules
 '''
 
 import types
@@ -21,6 +21,6 @@ def reload_all(*args):
             transitive_reload(arg, visited)
 
 if __name__ == '__main__':
-    print('ch24_reloadall self test')
-    import ch24_reloadall
-    reload_all(ch24_reloadall)
+    print('ch24_reload_all self test')
+    import ch24_reload_all
+    reload_all(ch24_reload_all)

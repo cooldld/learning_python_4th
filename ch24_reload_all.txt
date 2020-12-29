@@ -1,0 +1,3 @@
+ch24_reload_all self test
+reloading ch24_reload_all
+reloading types
