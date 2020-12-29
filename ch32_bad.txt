@@ -1,0 +1,4 @@
+class c_bad(Exception): pass
+
+raise c_bad()
+exception: c_bad

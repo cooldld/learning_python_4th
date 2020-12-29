@@ -1,0 +1,7 @@
+用raise引发异常
+raise IndexError
+exception: IndexError
+
+用assert引发异常
+assert False, 'a error by assert'
+exception: AssertionError

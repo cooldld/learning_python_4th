@@ -8,11 +8,11 @@ print('x =', x)
 
 print('fetcher(x, 3) =', fetcher(x, 3))
 
-print('''
+'''
 error!!!
 IndexError: string index out of range
 fetcher(x, 4)
-''')
+'''
 
 print()
 print('try/except 捕获异常')

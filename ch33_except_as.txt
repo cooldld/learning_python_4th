@@ -1,0 +1,4 @@
+class c_myexc(Exception): pass
+
+try and raise c_myexc('spam')
+exception: c_myexc, type(x) =<class '__main__.c_myexc'>, x = spam, x.args = ('spam',)

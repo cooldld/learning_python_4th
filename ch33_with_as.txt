@@ -1,0 +1,19 @@
+class c_trace_block, def __enter__/__exit__
+
+with c_trace_block() as action
+c_trace_block.__enter__
+action = <__main__.c_trace_block object at 0xb702a3ec>
+c_trace_block.message, arg = test 1
+test 1, block finish
+c_trace_block.__exit__, no exception
+
+with c_trace_block() as action
+c_trace_block.__enter__
+action = <__main__.c_trace_block object at 0xb702a46c>
+c_trace_block.message, arg = test 2
+test 2, raise TypeError
+c_trace_block.__exit__, exc_type = <class 'TypeError'>, exc_value = , exc_tb = <traceback object at 0xb70341bc>
+Traceback (most recent call last):
+  File "ch33_with_as.py", line 29, in <module>
+    raise TypeError
+TypeError

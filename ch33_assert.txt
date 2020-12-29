@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "ch33_assert.py", line 1, in <module>
+    assert False, 'assert False test'
+AssertionError: assert False test

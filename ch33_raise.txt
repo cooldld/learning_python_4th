@@ -1,0 +1,6 @@
+except IndexError
+raise with nothing
+Traceback (most recent call last):
+  File "ch33_raise.py", line 2, in <module>
+    raise IndexError('spam')
+IndexError: spam
