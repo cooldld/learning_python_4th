@@ -1,0 +1,32 @@
+from ch30_employees import Pizza_robot, Server
+class Employee
+
+class Chef(Employee)
+
+class Server(Employee)
+
+class Pizza_robot(Chef)
+
+class Customer
+
+class Oven
+
+class Pizza_shop
+
+self test
+Server, __init__, name = Pat
+Employee, __init__, name = Pat, salary = 40000
+Pizza_robot, __init__, name = Bob
+Chef, __init__, name = Bob
+Employee, __init__, name = Bob, salary = 50000
+Pizza_shop, order, name = Jack
+Customer, order, name = Jack, server = Pat
+Pizza_robot, work, name = Bob
+Oven, bakes
+Customer, pay, name = Jack, server = Pat
+...
+Pizza_shop, order, name = Shaggy
+Customer, order, name = Shaggy, server = Pat
+Pizza_robot, work, name = Bob
+Oven, bakes
+Customer, pay, name = Shaggy, server = Pat

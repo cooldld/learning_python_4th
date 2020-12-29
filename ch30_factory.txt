@@ -1,0 +1,12 @@
+def factory(class_type, *args, **kw_args)
+
+class c_spam, def doit
+
+class c_person
+
+spam_obj = factory(c_spam)
+spam_obj.doit('hello')
+c_spam.doit(), msg = hello
+
+person_obj = factory(c_person, 'bob', 'chef')
+person_obj, name = bob, job = chef

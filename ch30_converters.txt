@@ -1,0 +1,43 @@
+from ch30_streams import Processor
+class Processor
+
+class Uppercase(Processor)
+
+class c_html_write
+
+self test
+obj = Uppercase(open('ch30_streams.py'), sys.stdout)
+obj.process()
+Processor.process()
+PRINT('CLASS PROCESSOR')
+CLASS PROCESSOR:
+    DEF __INIT__(SELF, READER, WRITER):
+        SELF.READER = READER
+        SELF.WRITER = WRITER
+    DEF PROCESS(SELF):
+        PRINT('PROCESSOR.PROCESS()')
+        WHILE TRUE:
+            DATA = SELF.READER.READLINE()
+            IF NOT DATA: BREAK
+            DATA = SELF.CONVERTER(DATA)
+            SELF.WRITER.WRITE(DATA)
+    DEF CONVERTER(SELF, DATA):
+        ASSERT FALSE, 'CONVERTER() NOT DEFINE'
+
+obj = Uppercase(open('ch30_streams.py'), c_html_write())
+obj.process()
+Processor.process()
+<>PRINT('CLASS PROCESSOR')</>
+<>CLASS PROCESSOR:</>
+<>    DEF __INIT__(SELF, READER, WRITER):</>
+<>        SELF.READER = READER</>
+<>        SELF.WRITER = WRITER</>
+<>    DEF PROCESS(SELF):</>
+<>        PRINT('PROCESSOR.PROCESS()')</>
+<>        WHILE TRUE:</>
+<>            DATA = SELF.READER.READLINE()</>
+<>            IF NOT DATA: BREAK</>
+<>            DATA = SELF.CONVERTER(DATA)</>
+<>            SELF.WRITER.WRITE(DATA)</>
+<>    DEF CONVERTER(SELF, DATA):</>
+<>        ASSERT FALSE, 'CONVERTER() NOT DEFINE'</>

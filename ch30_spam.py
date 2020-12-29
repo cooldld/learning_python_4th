@@ -11,11 +11,11 @@ obj = c_spam()
 print("obj.bound_func('hello')")
 obj.bound_func('hello')
 
-print('''
+'''
 error!!!
 TypeError: unbound_func() takes 1 positional argument but 2 were given
 obj.unbound_func('hello')
-''')
+'''
 
 print("c_spam.unbound_func('hello unbound')")
 c_spam.unbound_func('hello unbound')
@@ -34,8 +34,8 @@ print('t =', t)
 print("t('hello unbound')")
 t('hello unbound')
 
-print('''
+'''
 error!!!
 TypeError: unbound_func() takes 1 positional argument but 2 were given
 t(obj, 'hello bound')
-''')
+'''

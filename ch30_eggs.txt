@@ -1,0 +1,6 @@
+class c_eggs, def m1/m2
+
+c_eggs().m2()
+c_eggs.m2(), x = self.m1
+c_eggs.m2(), x(42)
+c_eggs.m1(), n = 42

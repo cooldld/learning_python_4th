@@ -1,0 +1,17 @@
+class c_spam, def bound_func/unbound_func
+
+obj = c_spam()
+obj.bound_func('hello')
+c_spam.bound_func(), msg = hello
+c_spam.unbound_func('hello unbound')
+c_spam.unbound_func(), msg = hello unbound
+
+t = c_spam.bound_func
+t = <function c_spam.bound_func at 0xb70c1c44>
+t(obj, 'hello bound')
+c_spam.bound_func(), msg = hello bound
+
+t = c_spam.unbound_func
+t = <function c_spam.unbound_func at 0xb70c1104>
+t('hello unbound')
+c_spam.unbound_func(), msg = hello unbound

@@ -1,0 +1,15 @@
+class c_number, def double/triple
+
+x = c_number(2)
+y = c_number(3)
+z = c_number(4)
+
+acts = [x.double, y.double, y.triple, z.double]
+c_number.double(), base = 2
+x() = 4, x = <bound method c_number.double of <__main__.c_number object at 0xb705044c>>
+c_number.double(), base = 3
+x() = 6, x = <bound method c_number.double of <__main__.c_number object at 0xb705050c>>
+c_number.triple(), base = 3
+x() = 9, x = <bound method c_number.triple of <__main__.c_number object at 0xb705050c>>
+c_number.double(), base = 4
+x() = 8, x = <bound method c_number.double of <__main__.c_number object at 0xb705056c>>

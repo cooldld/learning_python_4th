@@ -1,0 +1,51 @@
+没有伪私有属性的例子
+
+class c_c1
+
+class c_c2
+
+class c_c3(c_c1, c_c2): pass
+
+data = c_c3()
+
+data.meth1()
+c_c1.meth1(), self.x = 88
+data.metha()
+c_c2.metha(), self.x = 99
+data.meth2()
+c_c1.meth2(), x = 99
+data.__dict__ = {'x': 99}
+
+data.metha()
+c_c2.metha(), self.x = 99
+data.meth1()
+c_c1.meth1(), self.x = 88
+data.methb()
+c_c2.methb(), x = 88
+data.__dict__ = {'x': 88}
+
+使用伪私有属性的例子
+
+class c_c1
+
+class c_c2
+
+class c_c3(c_c1, c_c2): pass
+
+data = c_c3()
+
+data.meth1()
+c_c1.meth1(), self.__x = 88
+data.metha()
+c_c2.metha(), self.__x = 99
+data.meth2()
+c_c1.meth2(), x = 88
+data.__dict__ = {'_c_c1__x': 88, '_c_c2__x': 99}
+
+data.metha()
+c_c2.metha(), self.__x = 99
+data.meth1()
+c_c1.meth1(), self.__x = 88
+data.methb()
+c_c2.methb(), x = 99
+data.__dict__ = {'_c_c1__x': 88, '_c_c2__x': 99}

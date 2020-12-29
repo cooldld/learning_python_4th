@@ -1,0 +1,12 @@
+class c_wrapper, def __getattr__
+
+x = c_wrapper([1, 2, 3])
+x.wrapped = [1, 2, 3]
+x.append(4)
+c_wrapper.__getattr__, trace attrname = append
+x.wrapped = [1, 2, 3, 4]
+
+x = c_wrapper({'a': 1, 'b': 2})
+x.wrapped = {'a': 1, 'b': 2}
+c_wrapper.__getattr__, trace attrname = keys
+x.keys() = dict_keys(['a', 'b'])

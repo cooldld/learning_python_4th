@@ -1,0 +1,49 @@
+class Employee
+
+class Chef(Employee)
+
+class Server(Employee)
+
+class Pizza_robot(Chef)
+
+self test
+bob = Pizza_robot('bob')
+Pizza_robot, __init__, name = bob
+Chef, __init__, name = bob
+Employee, __init__, name = bob, salary = 50000
+bob = Employee, name = bob, salary = 50000
+bob.work()
+Pizza_robot, work, name = bob
+bob.give_raise(0.20)
+Employee, give_raise, percent = 0.2, salary = 60000.0
+bob = Employee, name = bob, salary = 60000.0
+
+for cs in Employee, Chef, Server, Pizza_robot
+cs = <class '__main__.Employee'>
+cs.__name__ = Employee
+obj = cs(cs.__name__)
+Employee, __init__, name = Employee, salary = 0
+obj.work()
+Employee, work, name = Employee
+cs = <class '__main__.Chef'>
+cs.__name__ = Chef
+obj = cs(cs.__name__)
+Chef, __init__, name = Chef
+Employee, __init__, name = Chef, salary = 50000
+obj.work()
+Chef, work, name = Chef
+cs = <class '__main__.Server'>
+cs.__name__ = Server
+obj = cs(cs.__name__)
+Server, __init__, name = Server
+Employee, __init__, name = Server, salary = 40000
+obj.work()
+Server, work, name = Server
+cs = <class '__main__.Pizza_robot'>
+cs.__name__ = Pizza_robot
+obj = cs(cs.__name__)
+Pizza_robot, __init__, name = Pizza_robot
+Chef, __init__, name = Pizza_robot
+Employee, __init__, name = Pizza_robot, salary = 50000
+obj.work()
+Pizza_robot, work, name = Pizza_robot
