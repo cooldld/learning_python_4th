@@ -1,0 +1,12 @@
+L = [1, 2, 3, 4]
+def inc(x): return x + 10
+map(inc, L) = <map object at 0xb6ffc54c>
+list(map(inc, L)) = [11, 12, 13, 14]
+list(map((lambda x: x + 10), L)) = [11, 12, 13, 14]
+
+def mymap(func, seq)
+mymap(inc, L) = [11, 12, 13, 14]
+mymap((lambda x: x + 10), L) = [11, 12, 13, 14]
+
+pow(3, 4) = 81
+list(map(pow, [2, 3, 4], [1, 2, 3])) = [2, 9, 64]

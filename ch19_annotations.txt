@@ -1,0 +1,11 @@
+def func0(a, b, c)
+func0.__annotations__ = {}
+func0(1, 2, 3) = 6
+******************************
+def func1(a: 'spam', b: (1, 10), c: float) -> int
+func1.__annotations__ = {'return': <class 'int'>, 'a': 'spam', 'c': <class 'float'>, 'b': (1, 10)}
+func1(1, 2, 3) = 6
+******************************
+def func2(a: 'spam' = 4, b: (1, 10) = 5, c: float = 6) -> int
+func2.__annotations__ = {'return': <class 'int'>, 'a': 'spam', 'c': <class 'float'>, 'b': (1, 10)}
+func2() = 15

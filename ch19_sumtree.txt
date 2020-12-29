@@ -1,0 +1,20 @@
+L = [1, [2, [3, 4], 5], 6, [7, 8]]
+sumtree, L = [3, 4], tot = 7
+sumtree, L = [2, [3, 4], 5], tot = 14
+sumtree, L = [7, 8], tot = 15
+sumtree, L = [1, [2, [3, 4], 5], 6, [7, 8]], tot = 36
+sumtree(L) = 36
+L = [1, [2, [3, [4, [5]]]]]
+sumtree, L = [5], tot = 5
+sumtree, L = [4, [5]], tot = 9
+sumtree, L = [3, [4, [5]]], tot = 12
+sumtree, L = [2, [3, [4, [5]]]], tot = 14
+sumtree, L = [1, [2, [3, [4, [5]]]]], tot = 15
+sumtree(L) = 15
+L = [[[[[1], 2], 3], 4], 5]
+sumtree, L = [1], tot = 1
+sumtree, L = [[1], 2], tot = 3
+sumtree, L = [[[1], 2], 3], tot = 6
+sumtree, L = [[[[1], 2], 3], 4], tot = 10
+sumtree, L = [[[[[1], 2], 3], 4], 5], tot = 15
+sumtree(L) = 15
