@@ -1,0 +1,13 @@
+def decorator(cls)
+
+@decorator
+class c_c
+
+x = c_c(6, 7)
+c_wrapper.__init__
+c_c, __init__
+x = <__main__.decorator.<locals>.c_wrapper object at 0xb70705cc>
+
+x.attr =
+c_wrapper.__getattr__
+spam

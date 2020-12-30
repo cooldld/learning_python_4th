@@ -1,0 +1,11 @@
+def decorator(func)
+decorator = <function decorator at 0xb70bf77c>
+
+@decorator
+def times(x)
+decorator, count = 1
+times = <function times at 0xb7198464>
+times, x = 1
+times, x = 2
+times, x = 3
+times, x = 4

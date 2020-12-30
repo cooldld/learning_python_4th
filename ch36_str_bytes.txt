@@ -1,0 +1,20 @@
+S = 'spam'
+B = b'spam'
+
+type(S) = <class 'str'>
+type(B) = <class 'bytes'>
+
+S[0] = s
+B[0] = 115
+
+S[1:] = pam
+B[1:] = b'pam'
+
+list(S) = ['s', 'p', 'a', 'm']
+list(B) = [115, 112, 97, 109]
+
+S.encode() = b'spam'
+bytes(S, encoding = 'ascii') = b'spam'
+
+B.decode() = spam
+str(B, encoding = 'ascii') = spam

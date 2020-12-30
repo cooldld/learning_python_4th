@@ -1,0 +1,13 @@
+def tracer(func, *args)
+
+def spam(a, b, c)
+
+spam = <function spam at 0xb7169464>
+
+tracer(spam, 1, 2, 3)
+tracer, calls = 1
+spam, a + b + c = 6
+
+tracer(spam, 'a', 'b', 'c')
+tracer, calls = 2
+spam, a + b + c = abc

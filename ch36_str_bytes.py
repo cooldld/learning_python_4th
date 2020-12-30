@@ -28,11 +28,11 @@ print()
 print('B.decode() =', B.decode())
 print("str(B, encoding = 'ascii') =", str(B, encoding = 'ascii'))
 
-print('''
+'''
 error!!!
 TypeError: 'str' object does not support item assignment
 S[0] = 1
 
 TypeError: 'bytes' object does not support item assignment
 B[0] = 1
-''')
+'''

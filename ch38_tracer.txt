@@ -1,0 +1,19 @@
+class c_tracer, def __init__/__call__
+
+@c_tracer
+def spam(a, b, c)
+c_tracer.__init__
+
+spam = <__main__.c_tracer object at 0xb6ff740c>
+
+spam(1, 2, 3)
+c_tracer.__call__
+self.calls = 1
+self.func
+spam, a + b + c = 6
+
+spam('a', 'b', 'c')
+c_tracer.__call__
+self.calls = 2
+self.func
+spam, a + b + c = abc

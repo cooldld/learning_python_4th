@@ -1,0 +1,11 @@
+def func1()
+
+def func2()
+
+try and func2()
+func2, call func1()
+func1, raise IndexError
+func1, except IndexError
+func1, finally
+func2, finally
+main, finally

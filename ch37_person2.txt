@@ -1,0 +1,20 @@
+class c_person, def get_name/set_name/del_name
+
+bob = c_person('bob smith')
+
+bob.name =
+c_person, name = property(name)
+bob smith
+
+bob.name = 'robert smith'
+c_person, name = name.setter(name)
+
+bob.name =
+c_person, name = property(name)
+robert smith
+
+del bob.name
+c_person, name = name.deleter(name)
+
+c_person.name.__doc__
+name property docs

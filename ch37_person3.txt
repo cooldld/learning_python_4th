@@ -1,0 +1,22 @@
+class c_name, def __get__/__set__/__delete__
+
+class c_person, name = c_name()
+
+bob = c_person('bob smith')
+
+bob.name =
+c_name.__get__
+bob smith
+
+bob.name = 'robert smith'
+c_name.__set__
+
+bob.name =
+c_name.__get__
+robert smith
+
+del bob.name
+c_name.__delete__
+
+c_name.__doc__
+name property docs

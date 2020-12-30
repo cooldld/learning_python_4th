@@ -1,0 +1,18 @@
+class c_descriptor, def __get__
+
+class c_subject
+attr = c_descriptor()
+
+x = c_subject()
+
+x.attr
+c_descriptor.__get__
+self = <__main__.c_descriptor object at 0xb6fd002c>
+instance = <__main__.c_subject object at 0xb6fd040c>
+owner = <class '__main__.c_subject'>
+
+c_subject.attr
+c_descriptor.__get__
+self = <__main__.c_descriptor object at 0xb6fd002c>
+instance = None
+owner = <class '__main__.c_subject'>

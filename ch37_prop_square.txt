@@ -1,0 +1,20 @@
+class c_prop_square, def getX/setX
+X = property(getX, setX)
+
+P = c_prop_square(3)
+Q = c_prop_square(5)
+
+P.X =
+c_prop_square.getX
+9
+
+P.X = 10
+c_prop_square.setX
+
+P.X =
+c_prop_square.getX
+100
+
+Q.X =
+c_prop_square.getX
+25
